@@ -2,51 +2,16 @@
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
 }
 
 body {
-  background-color: #eaeaea;
+  background-color: #E4E0DD;
 }
-
-/* Navigation
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 64px;
-  background-color: white;
-  z-index: 1;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-}
-
-.content img {
-  padding-left: 24px;
-  height: 50px;
-  width: auto;
-}
-
-nav a {
-  align-items: center;
-  justify-content: center;
-  float: right;
-  font-size: 1rem;
-  color: #eaeaea;
-  text-decoration: none;
-}
-
-header .mobile {
-  display: none;
-}
-*/
 
 /* Header */
 
 header {
-  position: fixed;
   width: 100%;
   height: 64px;
   background-color: white;
@@ -67,7 +32,7 @@ header .content {
 
 #first-word {
   font-size: 24px;
-  color: #3e4d5d;
+  color: #235a8c;
   font-weight: 600;
 }
 
@@ -89,13 +54,19 @@ header nav ul {
 nav li {
   padding-left: 16px;
   justify-content: space-between;
+  padding-right: 1rem;
 }
 
 nav a {
   text-decoration: none;
   line-height: 1.6;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #ff4951;
+  letter-spacing: .04em;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 header .icon {
@@ -107,7 +78,375 @@ header .mobile {
   display: none;
 }
 
+
+/* Banner Section */
+
+.banner {
+  display: flex;
+  width: 100%;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.image-container {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  line-height: 1.1;
+  color: white;
+}
+
+.banner-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: #ff4951;
+}
+
+.line hr {
+  width: 55px;
+  height: 10px;
+  border: 0;
+  color: #ff4951;
+  background-color: #ff4951;
+  margin: .75rem 0;
+}
+
+.banner-content p {
+  color: #2d2d2d;
+}
+
+.banner-content a {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  background-color: #ff4951;
+  align-items: center;
+  margin-top: 15px;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 1px;
+  border-bottom: 4px solid #e82831;
+}
+
+.banner-content a:hover {
+  background-color: #ff3841;
+  transition: background-color 100ms ease-in 100ms;
+}
+
+/* Articles Section */
+
+.articles {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.articles .main-image-container {
+  margin: 1rem 1.5rem;
+  width: 60%;
+  padding-bottom: 2rem;
+}
+
+.articles .main-image-container img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.main-article-content {
+  padding-right: 2rem;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+.main-article-content h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+.main-article-content h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-top: 1.75rem;
+}
+
+.article-list-container {
+  border-left: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#first-article {
+  border-bottom: 1px solid lightgray;
+}
+
+#second-article {
+  border-bottom: 1px solid lightgray;
+}
+
+#third-article {
+  border-bottom: 1px solid lightgray;
+}
+
+.article-list .article {
+    width: 100%;
+    display: flex;
+}
+
+.small-image-container {
+    width: 35%;
+    padding: 1rem;
+}
+
+.small-image-container img {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.article-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+  padding-left: .5rem;
+  width: 65%;
+}
+
+.article-description h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  color: #000000;
+}
+
+.article-description p {
+  margin-bottom: 1rem;
+  color: #5d5d5d;
+}
+
+.article-description a {
+  text-decoration: none;
+  color: #235a8c;
+}
+
+
+/* Learning Section */
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses-container h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #2d2d2d;
+  justify-content: center;
+}
+
+.course-grid {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mobile-grid {
+  display: none;
+}
+
+.course {
+  background-color: white;
+  width: 25%;
+  margin: 1rem;
+  border: 1px solid #cac5c2;
+  border-radius: 3px;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-content {
+  height: 100%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.course-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+  color: #2d2d2d;
+}
+
+.course-content h4 {
+  text-transform: uppercase;
+  padding-bottom: .5rem;
+  color: #5d5d5d;
+}
+
+.course-content p {
+  padding-bottom: .5rem;
+  color: #5d5d5d;
+}
+
+/* Thesis Section */
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.thesis-container h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: #2d2d2d;
+  /*justify-content: center;*/
+}
+
+.exhibit {
+  display: flex;
+  width: 100%;
+}
+
+.exhibit .video-container {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  width: 60%;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-content {
+  padding-right: 2rem;
+  line-height: 1.5;
+}
+
+.video-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+.video-content p {
+  margin-top: 1rem;
+  color: #5d5d5d;
+}
+
+.exhibit-articles-list {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.exhibit-articles-list .exhibit-article {
+  width: 100%;
+  display: flex;
+}
+
+.exhibit-image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+.exhibit-image-container img {
+  width: 100%;
+}
+
+.exhibit-article {
+  display: flex;
+  width: 100%;
+}
+
+#hightlighted-article {
+  background-color: #eaeaea;
+}
+
+.exhibit-article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+  padding-left: .5rem;
+  width: 65%;
+}
+
+.exhibit-article h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.exhibit-article p {
+  margin-top: 1rem;
+  color: #5d5d5d;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+  font-size: .75rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+footer .privacy {
+  display: flex;
+}
+
+footer .privacy a {
+  padding-left: .5rem;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+/* Mobile Sections */
+
 @media only screen and (max-width: 760px) {
+
+  /* Mobile Header */
+
   header .desktop {
     display: none;
   }
@@ -132,10 +471,203 @@ header .mobile {
     padding: 0;
   }
 
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
+  /* Mobile Banner Section */
+
+  .banner {
+    flex-wrap: wrap;
   }
+
+  .image-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-content {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner-content p {
+    width: 100%;
+  }
+
+  .banner-content a {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .line hr {
+    display: none;
+  }
+
+  /* Mobile Articles Section */
+
+  .articles {
+    display: flex;
+    width: 100%;
+  }
+
+  .main-image-container {
+    display: none;
+  }
+
+  .article-list-container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+
+  .article-list {
+    margin: 1rem;
+  }
+
+  .article-list .article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .small-image-container {
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .small-image-container img {
+      width: 100%;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  #first-article {
+    border-bottom: none;
+  }
+
+  #second-article {
+    border-bottom: none;
+  }
+
+  #third-article {
+    border-bottom: none;
+  }
+
+  .article-description {
+    padding-left: 1rem;
+    width: 90%
+  }
+
+  /* Mobile Learning Section*/
+
+  .courses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .course-grid {
+    display: none;
+  }
+
+  .mobile-grid {
+    display: block;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+  .mobile-course {
+    background-color: #ff4951;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  .mobile-course h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .mobile-course i {
+    padding-right: .75rem;
+  }
+
+  /* Mobile Thesis Section */
+
+  .thesis-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thesis-container h2 {
+    font-size: 2.75rem;
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+
+  .exhibit {
+    display: flex;
+    width: 100%;
+  }
+
+  .exhibit .video-container {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .video-container .video {
+    width: 100%;
+  }
+
+  .video-content {
+    display: none;
+  }
+
+  .exhibit-articles-list {
+    display: none;
+  }
+
+  /* Mobile Footer Section */
+
+  footer {
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    padding-top: 2rem;
+  }
+
+  footer .privacy {
+    display: none;
+  }
+
 }
